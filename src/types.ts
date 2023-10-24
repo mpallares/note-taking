@@ -4,6 +4,12 @@ export interface NoteData {
   tags: Tag[];
 }
 
+export interface SimplifiedNote {
+  tags: Tag[];
+  title: string;
+  id: string;
+}
+
 export type RawNote = {
   id: string;
 } & RawNoteData;
