@@ -4,9 +4,9 @@ export interface NoteData {
   tags: Tag[];
 }
 
-export interface RawNote {
+export type RawNote = {
   id: string;
-}
+} & RawNoteData;
 
 export interface RawNoteData {
   title: string;
